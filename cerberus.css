@@ -1,0 +1,69 @@
+* {margin:0; padding:0; box-sizing: border-box; font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+.strong {font-weight: bold;}
+
+#navbars {width:100%}
+
+#navbar1 {display:flex; justify-content: space-between; align-items: center;} 
+#navbar1 a, #navbar1 a:visited {font-size:115%; text-decoration: none; color:black;font-weight: bold;}
+#navbar2 a, #navbar2 a:visited {text-decoration: none; color:black;font-weight: bold;}
+#firstCont {width:40%; height:70px} #secondCont {width:35%;}
+
+#firstLinks, #secondLinks, #navbar2 ul {height:70px;display:flex; justify-content: space-evenly; align-items: center;} #secondLinks {margin-right:20px}
+#firstLinks li, #secondLinks li, #navbar2 ul li {display:inline} #navbar2 ul {width:25%;margin-left:20px}
+
+#logoImg{width:60px;margin:0 10px}
+
+.smaller {font-size:90%} #try, #try:visited {color:#0000ff!important} .pink, .pink:visited {color:#ff764d!important}
+
+#megaNav {width:100%; height:400px; display:none; padding: 30px 50px}
+#megaNav h1:nth-child(3) {margin-top:30px}
+#morePlus:hover {cursor:pointer}
+
+#megaUl {display:flex; justify-content: flex-start} #megaUl li {display:inline; margin:20px 30px 20px 0}
+#megaUl li a, #megaUl li a:visited {text-decoration: none; color:black; font-weight:lighter}
+#mNav2 {display:flex;}
+#mNav2 div {width:25%; margin:20px 20px 20px 0; font-size:105%} #mNav2 div:hover {cursor:pointer}
+
+.divider {width:100%;height:2px; background-color: rgb(224, 224, 224);}
+
+#navbar2 {height:70px; width:100%}
+
+#mainSec, #sect3, #sect4, #sect5 {width:100%; padding:0 8% 8%;}
+#mainSec div:first-child {width:100%; height:500px;background: url("imgs/dog1.jpg");background-size: cover; background-position: center; display:flex; justify-content: center; align-items: center;}
+#mainSec div h1 {font-size:800%; color: #ff774daf; cursor: default}
+
+#mainSecText, .secText {padding:0 20%; margin-top:8%} #mainSecText p:first-child, .secText p:first-child {font-size:160%; margin-bottom:25px} #mainSecText p:nth-child(2), .secText p:nth-child(2) {font-size:95%}
+#mainSecText a {color:#0000ff; text-decoration:none}
+
+.stylish {height:100%} .sty2 {height:150%}
+.sty1, .sty2, .sty3 {position:relative; display:flex; width:100%; justify-content:space-evenly; align-items: center} .sty1::after {content:"";position:absolute; background-color:#fbffa7; width:58%; top:0; right:0; left:42%; bottom:0; z-index:-1}
+.sty2::after {content:"";position:absolute; background-color:#b6ffc0; width:59%; top:0; right:41%; left:0; bottom:0; z-index:-1} .sty3:after {content:"";position:absolute; background-color:#d5b3ff; width:60%; top:0; right:0; left:20%; bottom:0; z-index:-1}
+.sty1 img {width:35%} .sty3 img {width:38%; margin-left:16%} .sty3 {justify-content:flex-end}
+.sty2 div {display:flex;flex-direction:column;justify-content:space-between; align-items: center;width:35%;height:110vh} .sty2 div img {width:90%} .sty2 img {width:35%}
+#pupRace {padding:0 20%; margin: 8% auto 0} #pupRace iframe{display:block;margin:0 auto}
+
+#sect4 img {width:100%; margin-top:8%}
+
+#mainFinal {margin-top:8%;width:100%; background-color:#b1c5ff; display:flex}
+#mainFinal img, #mainFinal div {width:50%} #mainFinal div {padding:10%;display:flex; flex-direction:column; justify-content: center;}
+#mainFinal div p {font-size:160%;margin-bottom:20px} #mainFinal div a {text-decoration: none; color:#0000ff; font-size:150%}
+
+footer {margin-top:8%; padding: 0 8%; line-height:30px; font-size:105%} footer h1 {font-size:300%; margin-bottom:6%}
+
+#footer1 {display:flex; flex-wrap:wrap; justify-content: flex-start} #footer1 a {display:block; color:rgb(68, 68, 68); text-decoration: none;}
+#footer1 div:nth-child(2), #footer1 div:nth-child(5) { width:30%!important; margin-right:40px} #footer1 {font-size:95%}
+#sIconsCont div {margin-top:10px}
+#sIconsCont img {width:40px; margin-right:10px} #sIconsCont img:hover {cursor:pointer}
+
+#emailUp {width:100%;margin-top:20px}
+#emailUp input:first-child{background-color:rgb(238, 238, 238);border:none; padding:15px;font-size:100%;height:40px;width:70%} 
+#emailUp input:nth-child(2) {background-color:#0000ff; color:white; border:none; height:40px; width:30%; font-size:100%;}
+#emailSub:hover {cursor:pointer}
+
+.footCont1 {width: 26%; margin-bottom:6%} .footCont2 {width:38%; margin-bottom:8%}
+#language {width:20%} #country {width:40%} #language, #country {border:none; background-color:rgb(238, 238, 238); padding:5px; height:30px}
+
+#footer2 {width:100%; display:flex; justify-content: space-between; margin-bottom:2%}
+#footerUl li {display:inline; margin-right:15px} #footer2 a {text-decoration: none; color:rgb(22, 22, 22); font-size:75%}
+#foot2p {color:rgb(22, 22, 22); font-size:75%} #footer2 img {width: 45px; margin-left:20px} 
+#footImg {display:flex; align-items: center;}

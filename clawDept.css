@@ -1,0 +1,157 @@
+* {margin:0; padding:0; box-sizing: border-box; font-family: "Tw Cen MT"; scroll-behavior: smooth;}
+.strong {font-weight: bold;} 
+body {transition:0.5s; scroll-behavior: smooth; background-color: whitesmoke}
+
+#instro {
+    width:100%; 
+    height:100vh; 
+    display:flex; 
+    align-items: center; 
+    justify-content: center; 
+    position:absolute; 
+    background-color: whitesmoke!important} 
+    #instro img {width:30%}
+
+
+#navbar {
+    width:100%; 
+    padding:50px 20px; 
+    display:flex; 
+    align-items:center; 
+    justify-content: space-around; 
+    position:absolute;}
+#navbar ul li {display:inline; margin: 0 25px; font-size:100%; color:whitesmoke} #navList li a {text-decoration: none; color:whitesmoke;position:relative!important} 
+#navList li a::before {content:"";position:absolute;bottom:0;left:0;width:100%;height:1px;transform:scaleX(0); transform-origin:bottom right;background-color:rgba(255, 255, 255);transition:transform 0.3s ease-out}
+#navList li a:hover::before {transform:scaleX(1);transform-origin:bottom left}
+#navbar ul {margin-left: -60px}
+
+
+#navLogo {width:140px}
+#navBut {background:none; border:none; font-size:150%;transition:0.3s; width:50px; color:white;letter-spacing:1.5px} #navBut:hover {letter-spacing:6px; cursor:pointer}
+#introSect {width:100%; height:100vh; background-image: url("imgs/sneakers.jpg"); background-size:cover}
+#introImg {width:100%; height: 100vh; object-fit: cover; object-position: top;position:absolute; display:none}
+
+#sect2 {width:100%; color:#3b3b3b;display:flex; justify-content: space-between; padding:80px 6%;}
+#clawBrief {width:40%; font-size:230%} #logo2 {width: 40%; background-image: url("imgs/logo2.png");background-size:contain; background-repeat: no-repeat;}
+.fillButt {
+    color:#3b3b3b;
+    background: none; 
+    border: 1px solid black;
+    border-radius:20px; 
+    width:140px; 
+    height:30px;
+    position:relative; 
+    overflow: hidden; 
+    z-index: 1;
+    font-size:38%}
+.v1 {margin-top: 50px;}
+.fillButt:hover {cursor:pointer;color:whitesmoke!important;} 
+.fillButt:before {
+    content: "";
+    position: absolute;
+    background: rgb(39, 39, 39);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.25s ease-in;}
+.fillButt:hover:before {top: 0;}
+
+#sect3 {width:100%; height:100vh; padding: 0 6%; display:flex; justify-content: space-between; color:#3b3b3b}
+.sect3Div {width:32%; height:100%;} .sect3Div h2 {font-size:155%; padding:5% 5% 4%} .sect3Div p {padding-left:5%}
+.divImg3 {width:100%; height:80%; overflow: hidden;}
+.sect3Img {width:100%; height:100%; object-fit: cover; transform: scale(1.07); transition:0.6s ease}
+.sect3Div:hover img {transform: scale(1.0);} .sect3Div:hover {cursor:pointer} .sect3Div:hover h2 {text-decoration: underline;}
+
+#divFath {padding: 20px 6% 0; margin: 80px auto 100px} #divFath * {font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+#dividerX {width:100% ;display:flex; justify-content: space-evenly;align-items:flex-end; border-top: 1px solid black}
+#dividerX div {display:flex; justify-content: space-between; width:67%; padding-top:25px; line-height:10px} #dividerX span:first-child {width:33%;line-height:10px}
+#dividerX div span:nth-child(2) {font-size:150%; line-height:10px}
+
+#sect4 {
+    padding:0 6%;
+    width:100%;} 
+#sect4 h1 {font-size:300%; margin-bottom:120px; color: #3b3b3b}
+#carouselCont {width:100%; height:75vh;position:relative}
+#selUl {display:flex; width:165%; position:absolute; top:0; left:0; pointer-events: none;} 
+#carousel {position: absolute; width:100%; overflow:hidden; height:100%}
+#selUl li {display:inline; width: 20%; padding-right:90px; color:#3b3b3b} #selUl img {height:35px; margin-bottom:25px} 
+#selUl li p {font-size:135%; margin-top: 20px} #selUl h5 {font-size: 170%; padding-top:95px; position:relative} #selUl li a {color:#3b3b3b} 
+#selUl h5:before {content:""; width: 8%; border-top: 2px solid #3b3b3b; top:0; left:0; right:0; bottom:0; position:absolute}
+
+hr {border-top: 2px solid #3b3b3b;} .divi {padding:0 6%; margin: 60px auto 120px}
+
+#sect5 {width:100%; height:150vh; display:flex; padding: 0 6%;}
+#sect5 div {width: 50%;} #s5img {width:100%; height:100%; object-fit: cover;} #sect5 h1 {font-size:550%;line-height:75px;margin-bottom:40px}
+#sect5 p {font-size:125%; margin-bottom:70px} .v2 {font-size:90%!important}
+.blackyBckg {background-color:#292929!important;}
+.pinkyF {color:#f9cdcd!important} 
+.pinkyButt {color:#f9cdcd!important; border: 1px solid #f9cdcd!important;} .pinkyButt:before {background:#f9cdcd!important} .pinkyButt:hover {color:#292929!important}
+.pinkyBord {border-color:#f9cdcd!important} .sticky {position:sticky!important; align-self:flex-start; top:0}
+
+#sect6 {width:100%; padding: 0 6%; margin:120px 0 250px} #sect6 h2 {font-size: 275%; letter-spacing: -1px;} #sect6 * {color: #3b3b3b}
+#s6ul li {list-style: none; padding-top:20px;margin-bottom: 60px; border-top: 1.5px solid #3b3b3b} #s6ul li a {display:flex; text-decoration: none; height:250px}
+#sect6int {display:flex; justify-content:space-between; align-items: center; margin-bottom: 65px}
+#sect6 img {max-width:100%;height:100%; object-fit: cover; transform: scale(1.3); transition:0.6s ease} .sect61div {width:35%; margin-right:2%}
+#s6ul h2 {font-size:300%; margin-top:-5px} .sect62div div img {width:36px!important; height:30px!important; margin-top:6px} .sect62div div {display:flex; justify-content: space-between;}
+.sect62div {display:flex; flex-direction: column; justify-content: space-between; width:63%; height:100%} #s6ul p {font-weight:bold; font-size:105%; letter-spacing:-0.5px}
+#s6ul li:hover h2 {text-decoration: underline;} #s6ul li:hover .sect61div img {transform: scale(1.2); }
+.sect61div {overflow:hidden} 
+
+#footer {width:100%; padding:100px 6% 0; background-color: #292929;}
+#foot1 {display:flex; flex-wrap: wrap; color: white; width:100%} 
+#foot1 div {width: 100%; display:flex; margin-bottom:60px} #foot1 div:nth-child(2) {margin-bottom:20px!important}
+#f1div2 p {font-size: 225%; line-height:35px;} 
+#f1div2 a {color:white; position:relative; text-decoration: none; transition:0.5 ease}
+#f1div2 a::before {content:"";position:absolute;bottom:0;left:0;width:100%;height:2px;transform:scaleX(1); transform-origin:bottom left;background-color:rgba(255, 255, 255);transition:transform 0.5s ease-out}
+#f1div2 a:hover::before {transform:scaleX(0);transform-origin:bottom right}
+#f1div2 a::after {content:"";position:absolute;bottom:0;left:0; right:0; top:0;width:100%;box-shadow: 0 4px 4px black;transform:scaleX(0); transform-origin:bottom right;transition:transform 0.5s ease-out}
+#f1div2 a:hover::after {transform:scaleX(1);transform-origin:bottom left}
+
+#footLogo {width:80px; height:25px} #emailArr {width:20px; height:16px} #emailArr:hover {cursor:pointer}
+#f1div3 {display:initial!important; 
+    margin-right:10%;
+    width:80%!important} 
+#f1div3 p {font-size:140%;} 
+#f1div3 div {margin-top:10px; 
+    display:flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    border-bottom: 1px solid white;
+    width:100%}
+#f1div3 input {
+    color:white;
+    background:none;
+    outline:none; 
+    border:none; 
+    height:50px;
+    font-size:140%;}
+#f1div3 input::placeholder {color:white}
+
+#f1div4 {width:50%} 
+#f1div4 div {display:flex; 
+    flex-direction: column;
+width:33%}
+#f1div4 p {font-size: 140%; margin-bottom: 20px}
+
+.foot1ul {list-style: none;}
+.foot1ul a {color:white; 
+    text-decoration: none;
+    font-size:135%;
+    line-height:30px}
+.foot1ul a:hover {text-decoration: underline;}
+
+#foot2 {
+    width:100%;
+    height: 50px; 
+    background:url(imgs/estatica.gif); 
+    background-size:contain; 
+    color:rgb(85, 85, 85); 
+    display:flex; 
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 6%;
+    font-size:85%;
+    font-weight:bold}
+#foot2 a {text-decoration: none; color: rgb(85, 85, 85)}
