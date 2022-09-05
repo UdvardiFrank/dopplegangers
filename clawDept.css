@@ -2,6 +2,7 @@
 .strong {font-weight: bold;} 
 body {transition:0.5s; scroll-behavior: smooth; background-color: whitesmoke}
 
+
 #instro {
     width:100%; 
     height:100vh; 
@@ -9,8 +10,9 @@ body {transition:0.5s; scroll-behavior: smooth; background-color: whitesmoke}
     align-items: center; 
     justify-content: center; 
     position:absolute; 
-    background-color: whitesmoke!important} 
-    #instro img {width:30%}
+    background-color: whitesmoke!important;
+    z-index: 5} 
+    #instro img {width:30%; z-index: 5}
 
 
 #navbar {
@@ -30,6 +32,36 @@ body {transition:0.5s; scroll-behavior: smooth; background-color: whitesmoke}
 #navBut {background:none; border:none; font-size:150%;transition:0.3s; width:50px; color:white;letter-spacing:1.5px} #navBut:hover {letter-spacing:6px; cursor:pointer}
 #introSect {width:100%; height:100vh; background-image: url("imgs/sneakers.jpg"); background-size:cover}
 #introImg {width:100%; height: 100vh; object-fit: cover; object-position: top;position:absolute; display:none}
+
+#introButtCont {width:100%; position:absolute; height:85vh; margin-top:100px} #introButtCont:hover {cursor:none}
+#playIntro {height:200px; 
+    width:125px;
+    padding-top:40px;
+    position:absolute;
+    z-index: 3; 
+    display:flex; 
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition:all 0.2s ease-out;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    justify-content: flex-end;
+    display:none}
+#playIntro div {height:125px;
+    width:125px; 
+    border-radius:50%; 
+    margin-bottom:10px;
+    background-color:white; 
+    display:flex; 
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;
+    font-size:105%;
+    }
+.brand {color:#292929; font-weight: bold;}
+
+
 
 #sect2 {width:100%; color:#3b3b3b;display:flex; justify-content: space-between; padding:80px 6%;}
 #clawBrief {width:40%; font-size:230%} #logo2 {width: 40%; background-image: url("imgs/logo2.png");background-size:contain; background-repeat: no-repeat;}
@@ -69,18 +101,41 @@ body {transition:0.5s; scroll-behavior: smooth; background-color: whitesmoke}
 #dividerX div {display:flex; justify-content: space-between; width:67%; padding-top:25px; line-height:10px} #dividerX span:first-child {width:33%;line-height:10px}
 #dividerX div span:nth-child(2) {font-size:150%; line-height:10px}
 
+#dragTop {position:absolute;
+    width:110px; 
+    height:110px;
+    transition:0.1s ease;
+    display:none;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    }
+#pDrag {width:110px; 
+    height:110px; 
+    background-color:#f9cdcd;
+    color:#292929;
+    font-weight:bold; 
+    position:absolute; 
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    transition:0.3s ease;
+    justify-content: center;
+    }
+#draggy {text-align:center;
+    line-height: 110px;}
+
 #sect4 {
     padding:0 6%;
     width:100%;} 
-#sect4 h1 {font-size:300%; margin-bottom:120px; color: #3b3b3b}
-#carouselCont {width:100%; height:75vh;position:relative}
+#sect4 h1 {font-size:300%; color: #3b3b3b}
+#carouselCont {width:100%; height:75vh;position:relative;padding-top:120px; cursor:none}
 #selUl {display:flex; width:165%; position:absolute; top:0; left:0; pointer-events: none;} 
-#carousel {position: absolute; width:100%; overflow:hidden; height:100%}
+#carousel {position: absolute; width:100%; overflow:hidden; height:100%;}
 #selUl li {display:inline; width: 20%; padding-right:90px; color:#3b3b3b} #selUl img {height:35px; margin-bottom:25px} 
 #selUl li p {font-size:135%; margin-top: 20px} #selUl h5 {font-size: 170%; padding-top:95px; position:relative} #selUl li a {color:#3b3b3b} 
 #selUl h5:before {content:""; width: 8%; border-top: 2px solid #3b3b3b; top:0; left:0; right:0; bottom:0; position:absolute}
 
-hr {border-top: 2px solid #3b3b3b;} .divi {padding:0 6%; margin: 60px auto 120px}
+hr {border-top: 2px solid #3b3b3b;} .divi {padding:0 6%; margin: 180px auto 120px}
 
 #sect5 {width:100%; height:150vh; display:flex; padding: 0 6%;}
 #sect5 div {width: 50%;} #s5img {width:100%; height:100%; object-fit: cover;} #sect5 h1 {font-size:550%;line-height:75px;margin-bottom:40px}
@@ -104,9 +159,9 @@ hr {border-top: 2px solid #3b3b3b;} .divi {padding:0 6%; margin: 60px auto 120px
 #foot1 div {width: 100%; display:flex; margin-bottom:60px} #foot1 div:nth-child(2) {margin-bottom:20px!important}
 #f1div2 p {font-size: 225%; line-height:35px;} 
 #f1div2 a {color:white; position:relative; text-decoration: none; transition:0.5 ease}
-#f1div2 a::before {content:"";position:absolute;bottom:0;left:0;width:100%;height:2px;transform:scaleX(1); transform-origin:bottom left;background-color:rgba(255, 255, 255);transition:transform 0.5s ease-out}
+#f1div2 a::before {content:"";position:absolute;bottom:0;left:0;width:100%;height:2px;transform:scaleX(1); transform-origin:bottom left;background-color:rgba(255, 255, 255);transition:transform 0.3s ease-out}
 #f1div2 a:hover::before {transform:scaleX(0);transform-origin:bottom right}
-#f1div2 a::after {content:"";position:absolute;bottom:0;left:0; right:0; top:0;width:100%;box-shadow: 0 4px 4px black;transform:scaleX(0); transform-origin:bottom right;transition:transform 0.5s ease-out}
+#f1div2 a::after {content:"";position:absolute;bottom:0;left:0; right:0; top:0;width:100%;box-shadow: 0 4px 4px black;transform:scaleX(0); transform-origin:bottom right;transition:transform 0.3s ease-out}
 #f1div2 a:hover::after {transform:scaleX(1);transform-origin:bottom left}
 
 #footLogo {width:80px; height:25px} #emailArr {width:20px; height:16px} #emailArr:hover {cursor:pointer}
